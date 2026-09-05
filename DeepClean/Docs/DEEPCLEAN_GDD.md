@@ -1,11 +1,17 @@
 # DEEPCLEAN - Yaşayan Oyun Tasarım Belgesi
 
 > **Kanonik proje belgesi**  
-> Sürüm: 0.3  
-> Son güncelleme: 3 Eylül 2026  
+> Sürüm: 0.7  
+> Son güncelleme: 5 Eylül 2026  
 > Belge sahibi: Ana GDD bakım sohbeti
 
 Bu dosya, DEEPCLEAN'in güncel tasarım yönünü diğer proje sohbetleri için ortak ve okunabilir hâle getirir. Eski PDF ve beyin fırtınası metinleri tarihsel kaynaklardır; bundan sonraki çalışmalarda güncel kanonik kaynak bu dosyadır.
+
+**Sürüm ilkesi:** `0.x` sürümleri konsept, tasarım ve prototip öncesi/erken prototip kararlarını temsil eder. İlk dikey dilimin gerçek üretim uygulamasına geçildiğinde ve uygulanacak kapsam kilitlendiğinde belge `1.0` sürümüne çıkarılır. `1.0`, oyunun yayıma hazır olduğu anlamına gelmez; uygulanacak ilk üretim kapsamının başlangıcıdır.
+
+Her belge düzeltmesi sürüm artışı gerektirmez. Açıklamalar, mevcut sistem bilgilerinin düzeltilmesi ve küçük eklemeler aynı sürüm altında kaydedilir; sürüm numarası köklü tasarım eklemeleri veya önemli kapsam değişikliklerinde artırılır.
+
+**KESİN SÜRÜM EŞİKLERİ — 5 Eylül 2026:** Bölüm 17.2'deki güncel beş adımlı planın ilk üç adımı tamamlanıp görsel yön değerlendirildiğinde `0.8`; beşinci adım tamamlandığında `0.9`; uygulama kapsamı kilitlenip üretime geçildiğinde `1.0`. İlk görsel taslağının üretilmesi tek başına sürüm artışı oluşturmaz.
 
 ## 0. Karar durumları
 
@@ -23,7 +29,7 @@ Başka sohbetler **ADAY** veya **AÇIK SORU** durumundaki maddeleri kesin özell
 
 ### 1.1 Tek cümlelik tanım
 
-**ÇALIŞMA KARARI:** DEEPCLEAN; emekliye ayrılmış endüstriyel temizlik dronu B-404 ile ilk bakışta ezici yoğunluktaki sualtı çalışma sahalarını temizlediğimiz; tek bir çok amaçlı vakum, fizik sistemleri ve dünya içi küçük işler üzerinde giderek ustalaşıp batıkları ve ekosistemleri kalıcı biçimde hayata döndürdüğümüz birinci şahıs bir sualtı iş ve restorasyon simülasyonudur.
+**ÇALIŞMA KARARI:** DEEPCLEAN; emekliye ayrılmış endüstriyel geri kazanım dronu B-404 ile ilk bakışta ezici yoğunluktaki sualtı çalışma sahalarını işlediğimiz; atıkları değerli hammaddelere dönüştürdüğümüz; tek bir çok amaçlı vakum, fizik sistemleri ve dünya içi küçük işler üzerinde giderek ustalaşıp batıkları ve ekosistemleri kalıcı biçimde hayata döndürdüğümüz birinci şahıs sualtı madenciliği ve restorasyon simülasyonudur.
 
 ### 1.2 Tür
 
@@ -97,8 +103,8 @@ Referanslar bütün hâlinde kopyalanmayacaktır. Her oyundan yalnızca DEEPCLEA
 
 **KESİN:**
 
-- Oyuncu bir insan dalgıç değil, **B-404** adlı modifiye edilmiş endüstriyel temizlik dronudur.
-- B-404 ağır sanayi hizmetinden emekliye ayrılmış ve sualtı geri dönüşüm işi için yeniden donatılmıştır.
+- Oyuncu bir insan dalgıç değil, **B-404** adlı modifiye edilmiş endüstriyel geri kazanım/madencilik dronudur.
+- B-404 ağır sanayi hizmetinden emekliye ayrılmış ve deniz atıklarını ekonomik hammaddelere dönüştüren sualtı geri kazanım madenciliği için yeniden donatılmıştır.
 - Görsel kimlik sevimli fakat oyuncak gibi değil; kullanılan, dayanıklı ve sanayi tipi bir iş makinesi hissi vermelidir.
 
 ### 3.2 Kamera
@@ -173,6 +179,12 @@ Bir karşılaşma bu katmanlardan iki veya üçünü bir araya getirerek üretil
 
 **ÇALIŞMA KARARI:** Bunlara geçici olarak **görev modülü** denir. Görev modülü, bağımsız bir mobil mini oyun değil; aynı dünya, araç, fizik ve restorasyon hedefi içinde anlamlı bir iş prosedürüdür.
 
+**KESİN DENEYİM HEDEFİ — MİNİ OYUNLARIN AYRI KEYFİ:** Kullanıcının Cozy Cleaner referansında aradığı özellik, temizlik arasında ilginç ve kendi başına keyif veren farklı işler yapmaktır. Dünya ve araçlarla bütünleşme, mini oyunun sıradan temizlikten ayırt edilememesi anlamına gelmez. Oyuncu "şimdi farklı bir şey yapıyorum" hissini almalıdır. Yalnızca farklı nesnelerin üzerindeki kiri vakumlatmak bu hedefi karşılamaz.
+
+**ÇALIŞMA KARARI:** Her seçilen mini işin anlaşılır bir yerel amacı, temizlikten farklı bir eylem/karar ritmi ve kendine özgü görünür tamamlanma anı bulunmalıdır. Örneğin bir parçayı hizalama, yükü dengeleme veya sıkışan parçayı aşamalı çıkarma adayları aynı araçlarla farklı deneyimler sağlayabilir. Bunlar henüz seçilmiş giriş/orta bölüm mini oyunları değildir. Yakın çalışma görünümü, mekanik sesler ve bağlamsal geri bildirim farklılığı destekleyebilir; kontrol dağılımı daha sonra belirlenir.
+
+**DEĞERLENDİRME SORUSU:** "Bu işin üzerindeki kiri kaldırsak geriye oyuncunun yapacağı ilginç bir eylem kalıyor mu?" Kalmıyorsa iş temizlik karşılaşması olarak değerlidir, fakat tek başına mini oyun çeşitliliği hedefini karşılamaz. Finalde birleşecek davranışları öğretmek faydalıdır; her mini iş yalnızca final eğitimi olmak zorunda değildir. Küçük işlerin kendi keyfi ve keşif değeri korunur.
+
 **ADAY görev modülleri:**
 
 - Tortudan arındırılmış bir vanayı doğru basınç sırasıyla açmak.
@@ -197,6 +209,10 @@ Bir karşılaşma bu katmanlardan iki veya üçünü bir araya getirerek üretil
 - **Ters itiş / fırlatma:** Tutulan ağır nesneleri iter veya fırlatır; kırılabilir engeller ve fiziksel düzeneklerde kullanılır.
 - **Yakın kazıma:** Yüzeye kaynamış çamur, pas, kireç ve benzeri maddeleri yakın mesafede söker. Güçlü ses, titreşim ve malzeme geri bildirimi verir.
 
+**KULLANICI AKTARIMI - MEVCUT PROTOTİP:** Vakum, oyuncunun önündeki geniş bir etki hacmi içinde çalışır. Ana eylem basılı tutulduğunda uygun hafif fizik nesneleri sürekli kuvvet uygulanarak silaha doğru çekilir. Ağır nesneler doğrudan emilmek yerine tutulabilir, taşınabilir ve ikincil eylemle fırlatılabilir. Kum, çamur ve gelecekteki maddelerin aynı vakum girdisine kendi kurallarıyla tepki verebilmesi için ortak bir etkileşim yapısı bulunmaktadır.
+
+Bu özet oyuncu tarafından aktarılan mevcut davranışı kaydeder; kesin kuvvet, zamanlama, hedef önceliği ve sağ/sol tık çakışmaları mekanik denetiminde doğrulanacaktır.
+
 ### 5.2 Modül adayları
 
 **ADAY:**
@@ -219,21 +235,47 @@ Güçlenme üç eksende ilerler:
 2. **Verim:** Menzil, alan, filtreleme, batarya ve depo sayesinde aynı işi belirgin biçimde daha hızlı yapmak.
 3. **Orkestrasyon:** Akıntı, toplayıcı, makine ve ekolojik davranışları birbirine bağlayarak çok sayıda nesneyi oyuncunun başlattığı zincirleme bir süreçle yönetmek.
 
-**Örnek güç basamakları:**
+**Güç aşamaları ve erişim:**
 
-- **Operatör:** Nesneleri tek tek işler; dar menzil ve küçük depo nedeniyle öncelik belirler.
-- **Uzman:** Kümeleri işler, doğru başlık ve filtre kombinasyonunu seçer, akıntıdan yararlanır.
-- **Saha mühendisi:** Kirlilik kaynağını, akıntı yönünü, geçici toplayıcıları ve makineleri kurarak bütün bir alanı kontrollü biçimde çözer.
+- **Operatör:** Mevcut geniş vakum hacmini kullanabilir; sınırlılık zorunlu olarak menzilden değil, işleme kapasitesi, ağırlık sınırı ve maddeye müdahale seçeneklerinden gelir.
+- **Uzman:** Önceki araçların geliştirmelerinin yanında, bu aşamada ilk kez erişilebilen yeni mekanik ve modüller bulunur.
+- **Saha Mühendisi:** Önceki sistemlerin gelişmiş birleşimlerinin yanında, daha önce düşük güçlü bir sürümü bulunmayan aşamaya özgü sistemler de açılabilir.
+
+Bu aşamalar karakter sınıfları veya birbirinin yalnızca sayısal olarak güçlendirilmiş kopyaları değildir. Aşama hangi seçeneklerin erişilebilir olduğunu belirler; oyuncunun seçtiği yükseltmeler ise aynı aşamada nasıl çalıştığını belirler.
 
 Geç oyun, oyuncu girdisi olmadan ekranı silmemelidir. Oyuncu zincirleme temizliği **kurar, başlatır ve yönetir**. Böylece Keep on Mining'deki güçlenme hazzı korunurken oyunun fiziksel ustalığı geçersizleşmez.
 
 **ADAY:** Önceden tamamlanmış erken bölgelere isteğe bağlı geri dönüş; yeni araçlarla eski, zor alanların çok daha hızlı temizlenmesini ve saklı hedeflerin açılmasını sağlar. Bu geri dönüşler zorunlu içerik tekrarı değil, güç farkını gösteren kısa ustalık kontratları olmalıdır.
+
+### 5.4 Kontrol ve etkileşim ilkesi
+
+**KESİN İLKE:** Mekanik sayısı arttıkça her davranış için ayrı ve seyrek kullanılan bir tuş eklenmemelidir. Az sayıda tutarlı girdi, aktif mod ve bağlama göre farklı fakat tahmin edilebilir sonuçlar üretmelidir.
+
+**MEVCUT TEMEL:** Ana eylem vakumlamayı, ikincil eylem ise ters basınç/püskürtme ile tutulan ağır nesneyi bırakma veya fırlatma tarafını taşır. Kesin öncelik kuralları mevcut uygulama incelendiğinde belgelenmelidir.
+
+**ÇALIŞMA KARARI - BAĞLAMSAL KAZIMA:** Oyuncu yüzeye bağlı ve kazınabilir maddeye temas mesafesinde ana eylemi sürdürdüğünde vakum başlığı otomatik olarak yakın kazıma davranışına geçebilir. Böylece seyrek kullanılacak ayrı bir kazıma tuşuna ihtiyaç duyulmaz. Başlık animasyonu, ses, titreşim ve yüzey tepkisi mod değişimini açıkça göstermelidir.
+
+**AÇIK SORU:** Vakum odağı, başlık/mod seçimi ve gelecekteki manyetik manipülasyon için fare tekerleği, radyal seçim veya bağlamsal davranışların kesin dağılımı mekanik matrisi ve kullanılabilirlik testi sonrasında belirlenecektir.
+
+### 5.5 Aşamaya özgü sistemler, oyuncu seçimi ve tekrar oynanabilirlik
+
+**KESİN YÖN:** İlerleme hem mevcut mekaniklerin geliştirmelerini hem de yalnızca belirli güç aşamalarında açılan bağımsız yeni sistemleri içerir. Her ileri aşama özelliğinin erken oyunda zayıf bir sürümü bulunması gerekmez.
+
+**DRONE ERİŞİM SINIRI:** Yardımcı robot başlangıçta verilmez. Oyuna alınırsa yalnızca Saha Mühendisi aşamasında erişilebilir; mevcut vakumun erken güçsüz sürümü gibi aşamalara dağıtılmaz. Robotun kesin davranışı, zorunlu mu isteğe bağlı mı olduğu ve demoya üretim kabulü henüz belirlenmemiştir.
+
+**KESİN YÖN:** Oyuncu bütün geliştirmeleri önceden belirlenmiş aynı sırada almak zorunda olmamalıdır. Ortak ana ilerleyiş içinde hangi isteğe bağlı özelliklere ve geliştirmelere yatırım yapacağını kendi çalışma tarzına göre seçebilmelidir.
+
+**TEKRAR OYNAMA HEDEFİ:** Aynı yaklaşık 30 dakikalık seviyenin ikinci veya üçüncü oynanışı yalnızca sayısal hız farkı değil; farklı iş sırası, ekipman birleşimi, yerel çözüm ve oyuncu hissi üretebilmelidir. Farklı oyuncu tarzları için sabit bir sınıf sayısı henüz kararlaştırılmamıştır.
+
+**ÇALIŞMA KARARI:** Ana görev için vazgeçilmez yetenekler ortak erişimde kalmalı veya zorunlu engellerin farklı yatırım yollarıyla geçerli alternatif çözümleri bulunmalıdır. İsteğe bağlı yükseltme seçmeyen oyuncu ana ilerleyişte kilitlenmemelidir. Seçimlerin gerçek bir fırsat maliyeti üretmesi için kaynak/yuva sınırları değerlendirilecektir; kesin ekonomi ve modül sayısı açık karardır.
 
 ---
 
 ## 6. Madde, kirlilik ve fizik sistemleri
 
 ### 6.1 Modüler madde sistemi
+
+**KESİN TERMİNOLOJİ AÇIKLAMASI:** Bu belgede ve prototipte kullanılan "kum" ve "çamur" adları malzeme davranışlarını anlatan teknik çalışma isimleridir. Oyuncunun doğal deniz kumunu veya doğal deniz tabanını kir kabul ederek temizlemesi amaçlanmaz. "Kum" sistemi toz/tanecikli birikinti biçimindeki temizlenebilir maddeyi; "çamur" sistemi balçık kıvamında, yayılan ve akabilen temizlenebilir maddeyi temsil eder. Nihai kurgu adları, renkleri ve malzeme görünümleri henüz seçilmemiştir. Doğal çevre ile çıkarılacak yabancı atık görsel olarak ayrıştırılmalıdır.
 
 **KESİN / TEKNİK TEMEL:** Kum, çamur, yosun, yağ ve benzeri maddeler ortak bir madde altyapısından türeyebilir. Her madde en az şu özelliklerle ayrışabilir:
 
@@ -254,6 +296,59 @@ Geç oyun, oyuncu girdisi olmadan ekranı silmemelidir. Oyuncu zincirleme temizl
 - Destek kaybolduğunda madde aşağı düşer; duvara doğal olmayan şekilde yapışmaz.
 - Farklı destek nesnelerindeki birikintiler istenmeden birleşmez.
 - Vakum etki alanındaki hücreleri kademeli küçültür ve çekilen miktarı hesaplar.
+
+#### 6.2.1 Kum davranışı
+
+**KULLANICI AKTARIMI - MEVCUT PROTOTİP:**
+
+- Oyuncu kumu yüzeylere püskürterek biriktirebilir.
+- Yakın kum birikintileri birleşerek tek bir yığın hâlinde büyür.
+- Yığın bulunduğu alana göre açık alan, duvar kenarı, iç köşe veya dar alan biçimine uyum sağlar.
+- Altındaki destek kaybolursa kum aşağı düşer ve uygun bir alt yüzeye yerleşir; havada asılı kalmaz.
+- Vakum kullanıldığında yığın kademeli olarak küçülür ve tamamen çekildiğinde yok olur.
+- Birikinti boyutu içerdiği madde miktarıyla doğru orantılıdır; kalan miktar yığının küçülmesi üzerinden okunabilir.
+
+**ADAY KULLANIMLAR:** Nesne saklama/açığa çıkarma, destek ve ağırlık dağılımıyla ilgili işlemler ileride bu altyapıdan yararlanabilir; bunlar mevcut seviyede kurulmuş ve doğrulanmış bulmacalar değildir.
+
+#### 6.2.2 Çamur davranışı
+
+**KULLANICI AKTARIMI - MEVCUT PROTOTİP:**
+
+- Çamur yüzeylere tutunan, yoğun ve vakumla azaltılabilen bir kir türüdür.
+- Eğimli yüzeylerde aşağı akar ve geçtiği yerde akış izi bırakır.
+- Düz zemine ulaştığında birikinti oluşturur.
+- Kenarlardan ve duvarlardan uygun alt yüzeylere geçebilir; havada asılı kalmaz.
+- Oyuncu vakumladıkça miktarı ve görünümü azalır; kaynak birikinti tamamen temizlendiğinde ona bağlı akış izleri de kaybolur.
+- Birbirine yakın ve aynı yüzeydeki uygun birikintiler birleşebilir.
+
+**KULLANICI DEĞERLENDİRMESİ:** Kum ve çamur aynı temel altyapıyı kullanır. Mevcut etkileşim hisleri kısmen benzerdir; çamurun belirgin ek farkları akması ve daha geniş bir alana leke yaymasıdır. İki tamamen farklı çalışma yöntemi gerektirdikleri henüz varsayılmamalıdır.
+
+Bağlamsal kazıma planı, mevcut vakumla azaltma davranışını iptal etmez. Vakum serbest/yumuşak çamuru çekebilir; yakın kazıma ise yüzeye güçlü biçimde bağlanmış veya sertleşmiş çamur varyantı için ilerleme katmanı olabilir.
+
+#### 6.2.3 Akıntı ve dalga davranışı
+
+**KULLANICI AKTARIMI - MEVCUT DURUM:**
+
+- Mevcut akıntının ağırlıklı işlevi estetiktir: nesnelerin hareketiyle sualtında bulunma hissi verir.
+- İlk uygulamada rüzgâr benzeri bir kuvvet altyapısından yararlanılmıştır; bu teknik tercih nihai değildir.
+- Dalga sistemi bazı durumlarda çalışmayı zorlaştırabilir, fakat henüz dengelenmiş bir stratejik karar sistemi değildir.
+- Akıntıyı yönlendirme, kaynakları bilinçli toplama alanına taşıma veya farklı oyuncu tarzlarını destekleme mevcut ve doğrulanmış işlevler olarak kabul edilmez.
+
+**ADAY GELECEK YÖNÜ:** Sürekli yönsel akıntı ile aralıklı dalga kuvveti ayrı tasarım rolleri üstlenebilir. Oyuncunun hareketini, malzeme taşımasını ve saha yönetimini etkilemeleri değerlendirilebilir. Kesin aralıklar, kuvvetler ve oyuncuya etkileri uygulama/tasarım kararı olarak henüz kilitlenmemiştir.
+
+#### 6.2.4 Hafif, ağır ve yüzen çöp davranışı
+
+**KULLANICI AKTARIMI - MEVCUT PROTOTİP:**
+
+- Hafif çöpler vakum kuvvetinden etkilenerek fiziksel biçimde oyuncuya doğru çekilir.
+- Ağır çöpler emilmez; tutulabilir, taşınabilir ve fırlatılabilir.
+- Mevcut kırılabilir ağır çöp, bir yüzeye vurularak veya fırlatılıp çarptırılarak kırılabilir. Ağır nesneyi tutma/fırlatmanın şu anki somut kullanım örneği budur; eşya taşımalı seviye bulmacaları henüz kurulmamıştır.
+- Uygun çöplerin kaldırma/yüzdürme davranışı tek tek her nesnenin üzerinde çalışmak yerine bölgesel ve merkezî bir sistem tarafından yönetilir.
+- Ağır çöpler otomatik kaldırma/yüzdürme davranışının dışında tutulur.
+
+Kırılabilirliği oyuncuya öğreten seviye yönlendirmesi henüz yapılmamıştır. Kırılma sonrası parçaların toplanabilirliği ve kaynak ödülü ayrıca netleştirilmelidir; mevcut bilgi bunların işleyişini doğrulamamaktadır.
+
+**ADAY TASARIM YÖNÜ:** Çöp yalnızca satılacak kaynak olmayabilir; ağırlık, yüzdürme elemanı, mekanizma engeli, geçici tapa, karşı ağırlık veya başka bir fizik probleminin aracı olarak kullanılabilir.
 
 ### 6.3 Kirlilik kaynağı sistemi
 
@@ -313,6 +408,8 @@ Her kabul edilmiş mekanik için gerektiği ölçüde şu bilgiler tutulur:
 ### 7.2 Ekonomi
 
 **KESİN:** Plastik, paslı metal ve diğer geri dönüştürülebilir malzemeler kredi kazandırır. Krediler ekipman ve kapasite geliştirmelerinde kullanılır.
+
+**KESİN ROL TANIMI:** Oyuncu kurgu içinde bir çöpçü değildir. Plastik, metal, elektronik parça, cam ve diğer deniz atıkları çıkarılıp ayrıştırılacak maden/hammadde damarları gibi değerlendirilir. Ekolojik temizlik bu işin görünür ve olumlu dünya sonucudur.
 
 **ÇALIŞMA KARARI:** Ekonomi çok sayıda mobil oyun para birimine bölünmez. İlk hedef:
 
@@ -451,6 +548,8 @@ Her tasarlanan seviye/bölge için şu kısa şablon kullanılacaktır:
 
 **KESİN:** Fütüristik dönemde okyanus temizliği kazançlı bir "geri dönüşüm madenciliği" mesleğine dönüşmüştür. B-404, yüzeydeki şirketten topladığı malzemeler için kredi alır.
 
+Görev dili mümkün olduğunca "çöp toplama" yerine saha taraması, kaynak çıkarımı, malzeme geri kazanımı, enkaz işleme ve bölge restorasyonu kavramlarını kullanmalıdır. Cozy temizlik hissi korunur; fakat karakterin mesleki kimliği madencilik ve endüstriyel geri kazanımdır.
+
 ### 11.2 Ana gizem
 
 **KESİN:** Derinlere inildikçe sıradan çöplerin yanında nadir inciler, antik eşyalar ve açıklanamayan kalıntılar ortaya çıkar.
@@ -495,7 +594,7 @@ Her tasarlanan seviye/bölge için şu kısa şablon kullanılacaktır:
 
 **KAYNAK:** `D:\deepclean\deepclean\konsept görseller`
 
-**ÇALIŞMA KARARI:** Bu klasördeki eski yapay zekâ konseptleri kanonik üretim görseli değildir; geçici fikir ve envanter referansıdır.
+**KULLANICI AÇIKLAMASI — 5 Eylül 2026:** Tekne ve çöp modelleri bu klasördeki ilgili konseptler esas alınarak, yakın biçim benzerliği hedeflenerek modellenmektedir. İlgili tekne ve çöp tasarımları mevcut üretimin biçim referansıdır; yeni konsept çalışması bunların kimliğini korur. Klasörün tamamındaki ışık, ölçek, yazı ve yerleşim ayrıntıları otomatik olarak kanonik değildir. Modellerin tamamlanması veya yeni ekran görüntülerinin gelmesi erken görsel çalışma için ön koşul değildir.
 
 Yararlı tarafları:
 
@@ -510,7 +609,7 @@ Sorunları:
 - Nesne ölçeği, malzeme dili, tekne detayları ve stil seviyesi görseller arasında tutarlı değildir.
 - Bazı çöp setleri fazla oyuncak/mobil oyun estetiğine yaklaşır; yapay zekâ kaynaklı biçim ve yazı hataları içerir.
 
-**YENİ KONSEPT PAKETİ İÇİN HEDEF:** Sanat dili kesinleştiğinde mevcut görsellerin üzerine üretim kararı verilmemeli; aşağıdaki kontrollü set hazırlanmalıdır:
+**YENİ KONSEPT PAKETİ İÇİN HEDEF:** Mevcut üretim referanslarının biçimleri korunarak sanat dili ve oyuncu bakışı geliştirilir; aşağıdaki kontrollü set hazırlanmalıdır:
 
 - Aynı alanın kirli, yarı temiz ve restore edilmiş birinci şahıs oynanış kareleri.
 - Yakın çalışma alanı ile uzak su sisi için değer/renk hedefi.
@@ -539,6 +638,14 @@ Sorunları:
 - Kirlilik kaynağı durumu.
 - Bölgesel restorasyon özeti.
 - Vakum modu ve takılı modül.
+
+### 13.3 Madde analiz geri bildirimi
+
+**ÇALIŞMA KARARI:** Vakumun analiz/ayrıştırma süreci, hedef üzerinde beliren kısa ve küçük beyaz bir parıltı veya ince tarama vurgusuyla okunabilir hâle getirilebilir. Geri bildirim; büyük holografik tarama çerçeveleri, yoğun mavi arayüz katmanları veya Subnautica 2'nin görsel kimliğini doğrudan çağrıştıran bir sunum kullanmamalıdır.
+
+**KABUL EDİLEN SUNUM YÖNÜ:** Küçük beyaz malzeme doğrulama parlamasını, kaynak türüne bağlı çok kısa bir renkli parçacık vurgusu izleyebilir. Ses; bilimkurgu tarayıcı melodisinden çok endüstriyel barkod okuyucu/yazıcı gibi kısa ve mekanik olmalıdır. Nesne bütünüyle hologramla kaplanmaz; tekrarlanan ses ve parlamalar yoğun toplamada birleştirilerek görsel/işitsel yorgunluk önlenmelidir.
+
+Nesnelerin organik fizik hareketi korunmalıdır. Aynı rota ve hızla ilerleyen katı bir kuyruk yerine serbest çekim, kısa analiz kilidi ve yalnızca silah ağzına çok yakınken kontrollü son emiş kullanılmalıdır. Kesin görsel dil prototip ve okunabilirlik testiyle belirlenecektir.
 
 ---
 
@@ -583,10 +690,10 @@ Sorunları:
 
 ## 16. İlk dikey dilim hedefi
 
-**ÇALIŞMA KARARI:** Tam üretim kapsamından önce aşağıdaki tek bölüm oyunun kimliğini doğrulamalıdır:
+**ÇALIŞMA KARARI:** Tam üretim kapsamından önce yaklaşık 30 dakikalık, tek ve kesintisiz bir batık bölümü oyunun kimliğini doğrulamalıdır:
 
 - Bir küçük merkez/atölye alanı.
-- Bir ana sualtı bölgesi ve tek büyük batık.
+- Bir ana sualtı bölgesi ve dışı ile içi yükleme ekranı olmadan birbirine bağlı tek büyük batık.
 - Vakumlama, ters itiş/fırlatma ve kazıma.
 - En az üç davranış bakımından farklı madde türü.
 - Bir aktif kirlilik kaynağı ve onu durduran fizik problemi.
@@ -596,9 +703,120 @@ Sorunları:
 - En az üç niteliksel ekipman seçimi.
 - Aynı alan içinde en az bir görev modülü veya belirgin ritim değişimi.
 - Erken ve geliştirilmiş araç arasında aynı iş üzerinde açıkça hissedilen verim/strateji farkı.
-- Yaklaşık 8-15 dakikalık anlamlı dalış ritmi.
+- **Operatör, Uzman ve Saha Mühendisi** güç aşamalarının üçünü de gösteren sıkıştırılmış bir ilerleme eğrisi.
+- Dış alanın giriş/öğretim bölümü, mekanik olarak farklı çalışan batık içi ikinci bölüm ve ilk zorlukların yeni güçlerle hızla aşıldığı final dönüşü.
+- Yaklaşık 25-35 dakikalık tamamlanabilir demo/dikey dilim ritmi.
 
 Dikey dilimin temel testi: Oyuncu yalnızca daha hızlı temizlemek istememeli; alanın nasıl çalıştığını anlamak, altında ne olduğunu görmek ve geri döndüğünde dünyanın nasıl değiştiğini merak etmelidir. Güçlenme yeni bir sayıdan ibaret kalmamalı; oyuncunun aynı yoğun sahayı ele alma biçimini görünür şekilde değiştirmelidir.
+
+### 16.1 İlk 30 dakikanın çalışma akışı
+
+Bu zamanlar kesin senaryo süreleri değil, prototip ritim hedefleridir. Uygulama ve oynanış testleri sırasında değiştirilebilir.
+
+#### 0-8 dakika - Operatör / dış çalışma alanı
+
+- Oyuncu mevcut geniş etki hacimli vakum, ters basınç/fırlatma, hafif-ağır çöp, kum ve çamur davranışlarını öğrenir.
+- Alanın tamamını temizleyemeyeceği anlaşılır; sonraki güç seviyeleriyle çözülecek yoğun kümeler, ağır nesneler ve kapalı erişim noktaları erken gösterilir.
+- Vakumlanan kaynaklar ilk küçük verim gelişmelerini besler. Aynı anda işlenen hedef sayısı, analiz süresi veya depo işleme kapasitesi gibi artışlar ilk dakikalarda hissedilir fark üretmelidir.
+- Dış alan temizliği ve gelişim, batığın iç bölümüne erişimi açar.
+
+#### 8-20 dakika - Uzman / batık içi ikinci bölüm
+
+- Dışarıdaki yüksek hacimli temizliğin yerini daha dar, hassas ve sıralı bir çalışma ritmi alır; yükleme ekranı kullanılmaz.
+- Devrilmiş nesneler geçişi kapatır; kum bağlantıları gizler; çamur hareketli parçaları kilitler; kablo/ağ benzeri engeller fiziksel işlemleri etkiler; hassas eşyalar seçici çalışmayı gerektirir.
+- Gelişim döngüsü durmaz: oyuncu temizler, kaynak işler, küçük gelişme alır, yeni engeli aşar ve daha yoğun bir iç bölüme ulaşır.
+- Dar/geniş odak, bağlamsal kazıma, gelişmiş ayrıştırma ve ağır nesneyi kontrollü yönetme bu bölüm için aday ilerleme araçlarıdır; kesin dağılım mekanik matrisinde belirlenecektir.
+
+#### 20-27 dakika - Saha Mühendisi / birleşik prosedür
+
+- Oyuncu yalnızca daha hızlı vakumlayan değil, öğrendiği sistemleri birlikte kullanan seviyeye ulaşır.
+- **ÇALIŞMA KARARI — ANA PROSEDÜR TASLAĞI:** Sıkışmış bir numune/sondaj çekirdeğinin çıkarılması. Kum ve çamur temizliği, kilit noktalarının açılması, ters basınç, ağır parça/karşı ağırlık yönetimi ve olası manyetik manipülasyon aynı fiziksel süreçte birleşir. Ayrıntılı işleyiş aşağıdaki 16.1.1 bölümündedir; kesin teknik çözüm ve modül gereksinimleri henüz kilitlenmemiştir.
+- Prosedür ayrı bir arayüz mini oyununa geçmez; mevcut araç ve dünya kuralları farklı hassasiyet ve sırada kullanılır.
+- Bu bölümün ödülü, final temizliğinin ölçeğini belirgin biçimde artıran yeni bir davranış veya sistem birleşimidir. Manyetik zincirleme çıkarım ve rezonanslı kazı şu an adaydır, kesin değildir.
+
+#### 27-30 dakika - Final güç gösterisi ve dönüşüm
+
+- Oyuncu başlangıçta gördüğü veya kısmen temizlediği yoğun dış alana geri döner.
+- Birikmiş küçük ve büyük gelişmeleri birlikte kullanarak daha önce zorlandığı alanı kendisi çok daha hızlı işler.
+- Akıntı, kum, çamur, hafif/ağır çöp ve ayrıştırma mekanikleri finalde birbirini desteklemelidir; çevresel sistem oyuncunun yerine oynamamalıdır.
+- Son kapalı alan veya değerli kaynak açılır; batığın hikâye sonucu ve belirgin ekolojik önce/sonra dönüşümü gösterilir.
+
+### 16.1.1 Final mini oyunu ve tekne eklemelerinin işlevsel temeli
+
+**ÇALIŞMA KARARI — KORUNACAK FİKİR:** Final, oyuncunun temizlediği, çevirdiği ve taşıdığı parçaların birlikte büyük bir numuneyi fiziksel olarak serbest bıraktığı dünya içi bir mini oyundur. Kendine özgü hizalama/yük yönetimi/çıkarım ritmi ve belirgin bir sonuç anı sunar; yalnızca uzun bir temizlik kontrol listesine dönüşmemelidir.
+
+**ÖNCEKİ BİRLEŞİK AKIŞ TASLAĞI:** Aşağıdaki maddeler fikrin geçmiş birleşik hâlini korur. Güncel üç kapanış yapısında halka hizalama Uzman aşamasına, yük yönetimi ve çıkarım Saha Mühendisi aşamasına dağıtılmıştır (16.1.2); yedi adımın tamamı finalde tekrar oynatılmaz.
+
+1. Sıkışmış noktalar görsel işaretlerle veya aday sonar yardımıyla bulunur.
+2. Tanecikli birikinti ve çamur kaldırılarak kilit halkaları ile bağlantılar ortaya çıkarılır.
+3. Sıkışmış çevre gevşetilir; basınçlı püskürtmenin bu işlevi adaydır, mevcut madde püskürtme davranışıyla aynı olduğu varsayılmaz.
+4. Kilit halkaları hizalanır. Manyetik kavrama aday yöntemdir; ortak araçlarla geçerli çözüm ve kesin kontrol şeması açık kalır.
+5. Ağır karşı ağırlık uygun kılavuza/raya taşınarak çıkarım hazırlanır. Karşı ağırlığın hangi kilidi veya yük dengesini değiştirdiği mekanik tasarımda açıklanmalıdır.
+6. Numune kontrollü çekilirken çevresindeki tortu temizlenir. Zorlanma görüldüğünde başka sıkışma noktasına müdahale edilir; çekiş ve temizlik girdilerinin birlikte veya dönüşümlü kullanımı henüz kararlaştırılmamıştır.
+7. Numune tüpten fiziksel olarak çıkar ve geri kazanılır. Büyük parçanın serbest kalması ayrı bir görsel/işitsel tamamlanma anıdır.
+
+Bu sıra önceki fikri koruyan taslaktır; halka sayısı, kesin adım sırası, çekiş direnci, yük ve başarısızlık kuralları nihai değildir. Mıknatıs gibi isteğe bağlı bir modül ana görevin tek çözümü hâline getirilmez. Mevcut vakumun bütün uygun hafif nesneleri çekmesi korunur; kazıma, sonar ve manyetik manipülasyon uygulanmış sistemler gibi kabul edilmez.
+
+**ÜÇ AŞAMAYA BAĞLANTI:** Girişte toplama ve basit fiziksel müdahaleler gelişimi besler. Orta bölümde yeni yetenekler, farklı kısa işler ve devam eden kaynak/geliştirme döngüsü bulunur. Final bu davranışları birleştirir; ardından yaklaşık 27-30 dakikada oyuncu dış alanda kişisel güç artışını kullanır. Giriş ve orta bölüm mini oyunlarının tam listesi henüz seçilmemiştir. Devrilmiş nesne, gömülü bağlantı ve sıkışmış mekanizma örnekleri otomatik olarak kesin görev yapılmaz. Finalin ödülünün güçlenmeye nasıl bağlanacağı açıktır; numune değeri sıradan kaynak toplamayı anlamsızlaştırmamalıdır.
+
+**TEKNE KİMLİĞİ — ÇALIŞMA KARARI:** Mevcut küçük gövde, numune çıkarımı ve geri kazanım işi için ek ekipmanla donatılan tekne olarak geliştirilir. Teknenin geçmiş işinin ve oyuncunun bugünkü müdahalesinin fiziksel izleri görünür olmalıdır. Renkli gündelik atıklar, ekipman parçaları ve geri kazanılacak maddeler birlikte bulunabilir.
+
+**ÖNCEKİ EKİPMAN FİKİRLERİ — ADAY ENVANTER:** Numune sondaj düzeneği; elektromanyetik ayırıcı; ağır yük vinci; cevher/numune depolama bölümü; endüstriyel filtreler; sıkışmış sondaj çekirdeği. Bu liste her ekipman için ayrı mini oyun veya zorunlu tamir zinciri kabul edildiği anlamına gelmez. Elektromanyetik ayırıcı bütün metal türlerini çekiyor sayılmaz.
+
+| Finalde gereken iş | Tekne eklemesinin sağlaması gereken karşılık |
+|---|---|
+| Birikintiyi kaldırıp bağlantıları bulma | Kısmen gömülü kılavuz ve bağlantı yuvaları |
+| Halkaları ortaya çıkarma ve hizalama | Erişilebilir hareketli kilit halkaları |
+| Karşı ağırlığı taşıma | Yükün işlevini gösteren kılavuz ve mekanik bağlantı |
+| Çekiş sırasında sıkışmayı çözme | Hareketle yeni müdahale noktaları açılan tüp/yatak |
+| Numunenin fiziksel olarak çıkması | Çıkarım mesafesi ve parçayı karşılayacak alan |
+
+**KAPSAM SINIRI:** Vinç bu işlevlerden birini desteklediği ölçüde eklenir; karşı ağırlığı gereksizleştirmemeli veya oyuncunun çıkarım işini tamamen devralmamalıdır. Filtre/ayırıcı/depo, giriş ve orta bölüm için aday çalışma alanlarıdır; bütün makineleri sırayla tamir etme zorunluluğu onaylanmamıştır. Teknenin ölçüleri ve iç yerleşimi doğrulanmadan bütün ekipmanın sığdığı varsayılmaz.
+
+**GÖRSEL ÜRETİMDEN ÖNCE:** Sabit tüp, çıkan numune taşıyıcısı, kilit halkaları, kılavuz ve karşı ağırlık/yük desteğinin ilişkisi netleştirilir. Sonra kullanıcı için İngilizce görsel istemi hazırlanır. Kullanıcı görselleri harici yapay zekâda üretir; bu sohbet inceler. Yeni açık talep olmadan burada görsel üretilmez. Mevcut dış alan taslakları henüz onaylı sanat hedefi değildir.
+
+### 16.1.2 Birbirine bağlı üç aşama kapanışı
+
+**KESİN TASARIM İLKESİ:** Oyuncuya başlangıçta verilen ana hedefe aşamalı olarak yaklaşılır. Üç mini oyun Operatör, Uzman ve Saha Mühendisi aşamalarının kapanışlarıdır; peş peşe bağımsız işler değildir. Aralarında keşif, kaynak toplama, geliştirme seçimi ve yeni yetenek kullanımı sürer. Her kapanış sonraki aşamaya somut erişim veya mekanik hazırlık sağlar; yalnızca ek kaynak vermesi zorunlu ana hat için yeterli gerekçe değildir. Farklı yerel amaç ve eylem ritimleri korunur.
+
+**KESİN GELİŞİM İLKESİ:** İlk kapanış başlangıç ekipmanıyla hemen çözülebilir olmamalıdır. Oyuncu engeli erken görür, dış sahadaki çalışmasıyla yeni bir işlev kazanır ve aynı engele dönerek önceden yapamadığı müdahaleyi yapar. Mevcut geniş vakum veya ağır nesne tutma işlevi yapay biçimde zayıflatılmaz. Temizlik yüzdesi, görünmez duvar veya yalnızca aşama etiketi fiziksel gerekçenin yerine geçmez. Zorunlu yeni işlev ortak ilerleme erişimindedir; isteğe bağlı geliştirme seçimleri bu erişimi kilitlemez. Yeni yeteneğin açılması mini oyunu otomatik tamamlamaz.
+
+| Kapanış | Ana hedefle bağlantısı | Durum ve farklı his |
+|---|---|---|
+| Operatör: raylı bakım kızağını açma | Numune kilitlerinin servis bölümüne erişim sağlar | İşlevsel taslak; yeni yetenekle hareket ettirip sıkışma nedenini ortaya çıkarma |
+| Uzman: numune kilitlerini hizalama | Numuneyi mekanik olarak serbest bırakır | KONSEPT; hizalama ve bağlantı ilişkisini çözme, kesin mekanizma açık |
+| Saha Mühendisi: yük dengeli çıkarım | Numuneyi fiziksel olarak geri kazanarak ana hedefi tamamlar | KONSEPT; karşı ağırlık, kontrollü çekiş ve tortu müdahalesi, kesin mekanizma açık |
+
+Ana hedef için "sıkışmış son numuneyi geri kazan" çalışma ifadesi kullanılır. Bu tablo son iki mini oyunun üretime hazır olduğunu belirtmez. Kişisel güç gösterisi için dış alana son dönüş korunur. Genel kaynak ekonomisi numune ödülüyle değersizleştirilmez.
+
+#### İlk kapanış için yeni yetenek önerisi: mekanik tahrik bağlantısı
+
+**YENİ ÇALIŞMA ÖNERİSİ — KULLANICI DEĞERLENDİRMESİ BEKLER:** Vakum platformuna takılan bağlantı ucu, standart servis yuvasına oturup makinenin miline kontrollü dönme hareketi aktarır. Mevcut serbest çekme/itmeden farklı olarak bir mekanizmayı bağlantı üzerinden çalıştırır. Bu önerinin ayrıntıları, kesin gelişim ilkesinden ayrı tutulur; mevcut uygulama değildir.
+
+- Bakım kızağı, numune servis girişinin önünde iki ray üzerinde hareket eder. Sabit dişli kutusu ve kendinden kilitlemeli vidalı mil kızağı taşır; dışarıdan çekmek onu açmaz. Yeni uç servis milini döndürerek kızağı ilerletir. Modelde mil, somun/taşıyıcı bağlantısı ve gövde ankrajı görünür olmalıdır.
+- Oyuncu başlangıçta yuvayı ve kapalı geçişi görür; olağan temizlik ve gevşek engelleri kaldırma mümkündür. Dış sahadaki normal kaynak işleme ortak temel modülün edinilmesini besler. Fiyat, teknoloji eşiği ve edinim ekranı ekonomi tasarımında belirlenecek; sonsuz çöp üretimi veya ilk kapının arkasındaki tek bir eşyaya bağımlılık kurulmayacaktır.
+- Modülle dönüldüğünde yuva üzerinden kızak kısmen hareket ettirilir. Açılan servis aralığı, rayda sıkışmış ayrı metal takozu görünür ve erişilebilir kılar. Kızak biraz geri alınarak takoz üzerindeki yük boşaltılır; oyuncu bağlantıdan ayrılıp mevcut ağır nesne tutmasıyla takozu çıkarır. Yeniden bağlanıp ilerleterek geçişi açar. Takoz rastgele anahtar değildir; hareketi fiziksel olarak engeller.
+- Kontrol önerisi: yakın yuvaya nişan alıp ana eylemle bağlanma; bağlıyken sol/sağ eylem ileri/geri tahrik; iki eylem bırakılınca ayrılma. Mod değişimi belirgin geri bildirim verir, hedefleme sırasında rastgele bağlanma önlenir. Kesin bağlanma süresi ve girdi öncelikleri kullanılabilirlik tasarımıdır.
+- Sıkışmada motor durur, parçanın yük altında olduğu hareket/sesle anlaşılır. Ölüm, süre baskısı veya ilerleme sıfırlama önerilmez. Güçlü ekipman zorunlu engeli açabilir; mini işin içinde gözlem ve geri alma kararı yine oyuncudadır.
+- Aynı standart bağlantı için iç bölüm mekanizması ve çıkarım taşıyıcısı aday sonraki kullanımlardır. Bunlar kesin mini oyun çözümü değildir. En az üç anlamlı kullanım, iki sistemle birleşim ve görünür yöntem farkı ölçütü sağlanamazsa modül tek kullanımlık bir anahtar hâline getirilmeden revize edilir.
+- Modelleme taslağı: sabit çerçeve, iki ray, hareketli bakım kızağı, vidalı tahrik mili, korumalı dişli kutusu/servis yuvası, çıkarılabilir takoz ve fiziksel olarak kapatılan giriş. Ölçüler, tekne üzerindeki kesin açıklık ve yük geometrisi doğrulanmadan bitmiş aset üretimi yapılmaz. Gövdeye yeni bir delik açıldığı varsayılmaz.
+
+Görsel istemi: `Art/DEEPCLEAN_OPERATOR_MINIGAME_PROMPT_EN.md`. İstem bu mekanizma önerisini incelenebilir kılar; görselin üretilmesi öneriyi otomatik olarak kesinleştirmez.
+
+### 16.2 Dikey dilim ilerleme ilkesi
+
+Üç güç aşaması yalnızca bölüm başlarında verilen üç büyük yükseltmeden oluşmamalıdır. Yaklaşık her birkaç dakikada bir küçük verim kazanımı, yeni kullanım veya daha önce görülen engeli aşma fırsatı bulunmalıdır. Bununla birlikte her kazanım yeni bir tuş veya bütünüyle bağımsız sistem değildir.
+
+**ÇALIŞMA HEDEFİ:**
+
+- Az sayıda ana oyuncu fiili.
+- Sürekli hissedilen küçük verim artışları.
+- En fazla birkaç büyük davranış açılımı.
+- Yeni açılan davranış için anlamlı ve yeterli kullanım fırsatları; açıldıktan sonraki 30-60 saniyede kullanım zorunlu değildir.
+- Önceki engellerin yeni güçlerle yeniden yorumlanması.
+- Finalde oyuncunun seçtiği gelişmelerin güç farkını gösterebilmesi; her mekaniğin finalde kullanılması zorunlu değildir.
+
+Yaklaşık 3-4 dakikada bir gelişim fırsatı sunulması ritim hedefidir; belirli dakikada belirli modülün herkese otomatik verilmesi anlamına gelmez. Oyuncunun yatırım seçimleri korunur. Aşamaya erişim ile isteğe bağlı yükseltme satın alma/seçme ayrı kararlardır.
 
 ---
 
@@ -614,14 +832,15 @@ Yeni bir özellik bu dört parçadan en az birini güçlendirmiyor veya araları
 
 ### 17.2 Tasarım sırası
 
-1. **Çekirdek vaat:** Vakum hissi, yoğunluk-okunabilirlik dengesi ve önce/sonra dönüşümü doğrulanır.
-2. **Mekanik matrisi:** Mevcut madde, kuvvet, makine ve ekoloji davranışları listelenir; hangi birleşimlerin gerçekten farklı karar ürettiği test edilir.
-3. **Güç eğrisi:** Aynı test sahası Operatör, Uzman ve Saha Mühendisi seviyelerinde oynatılır; yalnızca süre değil, kullanılan yöntem değişmelidir.
-4. **Seviye grameri:** Öğretim cebi, ana problem, kirlilik kaynağı, görev modülü, kahraman nesne ve dönüşümden oluşan bir gri kutu bölüm kurulur.
-5. **Görev modülleri:** Tam oyun için dört ila altı tekrar kullanılabilir aday belirlenir; dikey dilimde yalnızca en güçlü iki tanesi prototiplenir.
-6. **İlerleme/RPG ve ekonomi:** Önceki testlerden sonra dallanma, kredi, araştırma ve uzmanlık yapısı tasarlanır.
-7. **Sanat hedefi:** Oynanış kamerası ve seviye yapısı doğrulandıktan sonra tutarlı konsept paketi ve sanat kılavuzu hazırlanır.
-8. **Gelişmiş üretim:** Ancak bu kapılardan sonra yeni büyük fizik sistemleri ve içerik üretimi genişletilir.
+**GÜNCEL ÇALIŞMA NOKTASI:** Erken görsel tasarım çalışması başlamıştır. Mekanik tanımlama/seçim matrisi bu çalışma sonrasında sürdürülecektir. Karşılaştırmalı playtestler henüz başlamamıştır. Daha önce konuşulan değerli kutulu küçük test alanı kabul edilmiş bir seviye tasarımı değildir; değerli kutu da mevcut prototip içeriği değildir.
+
+1. **Görsel tarif:** Mevcut tekne/çöp biçimleri korunarak su, ışık, malzeme, bitki ve iki temizlenebilir madde için kısa çalışma tarifi hazırlanır.
+2. **İlk dış alan konsepti:** Oyuncu bakışından tekne, yoğun atıklar, kirler ve bitkiler birlikte gösterilir; görsel yön değerlendirilir.
+3. **İç alan ve dönüşüm:** Seçilen dil tekne içine taşınır; aynı dış alanın kirli ve temizlenmiş görünüşleri karşılaştırılır. Tutarlılık değerlendirildiğinde `0.8`.
+4. **Mekanik ve ilerleme matrisi:** Mevcut davranış, geliştirme ve yeni sistem adayları ayrılır. Üç güç aşaması, isteğe bağlı seçimler, kontrol gereksinimleri ve alternatif yöntemler belirlenir.
+5. **Bölüm, ekonomi ve kapsam:** Yaklaşık 30 dakikalık dış/iç alan akışı, kaynak kazanımı, yükseltme fırsatları, sondaj/çıkarım adayı ve final güç hissi birlikte tasarlanır. İki kişilik üretim kapsamı belirlenir; tamamlandığında `0.9`.
+
+**UYGULAMAYA GEÇİŞ:** Kapsam kilitlenip üretime başlandığında `1.0`. Gri kutu uygulama, motor içi görünüm denemeleri ve oynanış testleri, tasarım varsayımlarını bu süreçte sınar. Konsept görselleri ölçülü mimari plan veya çalıştığı kanıtlanmış oynanış değildir.
 
 ### 17.3 Dikey dilim kabul ölçütleri
 
@@ -629,12 +848,79 @@ Yeni bir özellik bu dört parçadan en az birini güçlendirmiyor veya araları
 - Yoğun sahne zengin görünür fakat etkileşim hedefleri kaybolmaz.
 - İlk dakikalarda temel vakum eylemi kendi başına tatmin edicidir.
 - Bir yükseltme oyuncunun yalnızca hızını değil, çalışma yöntemini de görünür biçimde değiştirir.
-- 8-15 dakikalık örnek dalış en az üç ana etkileşim fiili ve bir doğal ritim değişimi içerir.
+- Yaklaşık 30 dakikalık örnek seviye en az üç ana etkileşim fiili, sürekli ilerleme geri bildirimi ve bir doğal ritim değişimi içerir.
 - Oyuncu kirliliğin kaynağını bulup durdurduğunda alan kalıcı olarak değişir.
 - Görev modülü ana oyundan kopuk hissettirmez ve sonradan başka bir seviyede yeniden kullanılabilir.
 - Prototip, oyunun "bir sonraki güç seviyesinde bu alanı nasıl temizlerdim?" merakını oluşturur.
 
+### 17.4 Mekanik kabul ve seviye desteği ölçütleri
+
+**KABUL EDİLEN TASARIM NOTU:** Tekrar kullanılan bir mekanik için şu üç özellik aranır:
+
+1. Seviye boyunca en az üç anlamlı kullanım fırsatı sunması.
+2. En az iki başka sistemle işlevsel biçimde birleşmesi.
+3. Oyuncuya görünür bir güç veya çalışma yöntemi farkı vermesi.
+
+Bu ölçütler oyuncuyu her seçeneği kullanmaya zorlamak için değil, üretilen mekaniğin seviye tasarımıyla desteklenmesini değerlendirmek içindir. Özellikle isteğe bağlı mekanik, onu seçen oyuncu için değerli olmalı; seçmeyen oyuncuyu yapay biçimde engellememelidir.
+
+**ZORUNLU OLMAYAN ÖLÇÜTLER:** Açıldıktan sonraki 30-60 saniyede kullanılma ve final güç gösterisinde tekrar görünme faydalı fırsatlar olabilir; kabul koşulu değildir. Bir yeteneği açılır açılmaz denetebilmek, onu oyunun başlangıcında vermek anlamına gelmez.
+
+Seviyeye özgü tek seferlik bir anlatı/prosedür sahnesi bu tekrar kullanılabilir mekanik ölçütlerinden ayrı değerlendirilir. Böyle bir sahne, yeni ve pahalı bağımsız sistemler yerine mevcut mekanikleri mümkün olduğunca yeniden kullanmalıdır.
+
 ## 18. Değişiklik günlüğü
+
+### 0.7 içinde — 5 Eylül 2026
+
+- Üç mini oyunun aşama kapanışı, ana hedefe fiziksel ilerleme ve farklı deneyim oluşturması kaydedildi; Uzman/Saha Mühendisi çözümleri konsept bırakıldı.
+- İlk mini oyunun yeni yetenek edinmeden tamamlanamaması kesin gelişim ilkesi olarak eklendi. Mekanik tahrik bağlantısı bunun için yeni çalışma önerisi olarak ayrı etiketlendi.
+
+- Mini oyunların dünya ve araçlarla bütünleşirken sıradan temizlikten farklı, ilginç ve kendi başına keyifli deneyimler sunması kabul edildi.
+- Önceki final numune çıkarım taslağı ayrıntılı olarak geri kaydedildi; belirsiz mekanik ve giriş/orta bölüm görevleri aday/açık tutuldu.
+- Tekne ekipman envanteri ve finalin fiziksel gereksinimleri ilişkilendirildi; bağımsız zorunlu makine tamir zinciri kabul edilmedi.
+- Kullanıcının harici görsel üretimi tercihi kaydedildi. Sürüm 0.7 korundu.
+
+- Kullanıcının onayladığı beş adımlı çalışma sırası ve `0.8 / 0.9 / 1.0` eşikleri kaydedildi; sürüm henüz artırılmadı.
+- Tekne ve çöp konseptlerinin mevcut modelleme için biçim referansı olduğu netleştirildi; erken sanat çalışması için tamamlanmış model bekleme koşulu kaldırıldı.
+- Görsel tasarım çalışma belgesi `Art/DEEPCLEAN_VISUAL_BRIEF.md` altında başlatıldı. Buradaki öneriler onaylanana kadar taslaktır.
+
+### 0.7 - 4 Eylül 2026
+
+- Aynı sürüm içi düzeltme: küçük belge eklemelerinde otomatik sürüm artırılmaması, yalnızca köklü değişikliklerde sürüm artışı yapılması açıklandı.
+- "Kum/çamur" adlarının doğal deniz tabanını değil, iki temizlenebilir madde davranışını temsil eden teknik çalışma adları olduğu netleştirildi.
+- Mevcut akıntının öncelikle estetik olduğu, stratejik kullanımların henüz aday kaldığı düzeltildi.
+- Kırılabilir ağır çöpün darbe/fırlatma yoluyla kırılması mevcut davranış olarak eklendi; taşıma bulmacalarıyla karıştırılmaması belirtildi.
+- Çalışmanın mekanik tanımlama/seçim matrisi aşamasında olduğu ve önerilen değerli kutulu test alanının kabul edilmediği kaydedildi.
+
+- Üç güç aşaması yalnızca aynı mekaniklerin daha güçlü sürümleri olmaktan çıkarıldı; aşamaya özgü yeni sistem erişimi açıklandı.
+- Yardımcı drone için başlangıçta bulunmama ve yalnızca Saha Mühendisi aşamasında erişim sınırı kaydedildi; kesin uygulama ve seçim statüsü açık bırakıldı.
+- Ortak ana ilerleyiş içinde oyuncunun yükseltme seçimi ve farklı yöntemlerle tekrar oynama hedefi eklendi.
+- Üç kullanım fırsatı, iki sistem bağlantısı ve görünür güç/yöntem farkı mekanik değerlendirme notları olarak eklendi.
+- Hemen kullanım ve finalde tekrar kullanım zorunlulukları kaldırıldı; 3-4 dakikalık gelişim ritmi sabit modül sırasından ayrıldı.
+- Küçük beyaz analiz parıltısı, kısa kaynak rengi vurgusu ve endüstriyel ayrıştırıcı sesi yönü ayrıntılandırıldı.
+
+### 0.6 - 3 Eylül 2026
+
+- Belge sürümleme kuralı eklendi: uygulama kapsamı kilitlenene kadar `0.x`, ilk gerçek üretim uygulamasına geçildiğinde `1.0`.
+- İlk 30 dakika Operatör dış alanı, Uzman batık içi, Saha Mühendisi birleşik prosedürü ve final güç gösterisi olarak ayrıntılandırıldı.
+- Gelişim döngüsünün batık içinde de devam etmesi ve yaklaşık her birkaç dakikada anlamlı bir ilerleme geri bildirimi vermesi şartı eklendi.
+- Sondaj/numune çıkarımı ana prosedür adayı olarak korundu; mıknatıs ve rezonans kesin mekanik yapılmadı.
+- Analiz kilidi için küçük beyaz parıltı yönü ve organik fizik hareketini koruma ilkesi eklendi; tek tip spline/kuyruk görünümünden kaçınıldı.
+
+### 0.5 - 3 Eylül 2026
+
+- Kullanıcı tarafından aktarılan mevcut vakum davranışı, teknik sınıf/değişken adları çıkarılarak tasarım seviyesinde kaydedildi.
+- Kumun püskürtülme, birleşme, çevre biçimine uyum, destek kaybı ve vakumla küçülme davranışları eklendi.
+- Çamurun yüzeye tutunma, eğimde akma, iz bırakma, uygun yüzeye düşme, birleşme ve vakumla azalması belgelendi.
+- Sürekli akıntı ile aralıklı dalga kuvveti tasarım açısından ayrıldı; kesin teknik değerler kanonik karar yapılmadı.
+- Hafif, ağır ve bölgesel yüzdürme yönetimine bağlı çöp davranışları kaydedildi.
+- Az sayıda tutarlı girdi ilkesi ve yüzeye bağlı maddeler için bağlamsal yakın kazıma çalışma kararı eklendi.
+
+### 0.4 - 3 Eylül 2026
+
+- B-404'ün kurgu içindeki rolü çöpçü/temizlik görevlisi değil, deniz atıklarını ekonomik hammaddelere dönüştüren endüstriyel geri kazanım madencisi olarak netleştirildi.
+- İlk dikey dilim, dış ve iç alanı yükleme ekranı olmadan birleştiren yaklaşık 30 dakikalık tek batık seviyesi olarak tanımlandı.
+- Operatör, Uzman ve Saha Mühendisi güç aşamalarının tamamının bu dikey dilimde sıkıştırılmış biçimde gösterilmesi kararlaştırıldı.
+- Batık içinin dış alandan mekanik ve ritmik olarak ayrışması, finalde ise oyuncunun ilk zorluklara yeni güçleriyle dönmesi şartı eklendi.
 
 ### 0.3 - 3 Eylül 2026
 
