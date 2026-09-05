@@ -620,6 +620,26 @@ Sorunları:
 
 ---
 
+### 12.6 Güncel bütün tekne modelleme referansı — 5 Eylül 2026
+
+**ÇALIŞMA KARARI / MODELLEME REFERANSI:** Aşağıdaki görsel, mevcut tekne gövdesi korunarak güverteye eklenecek parçaların genel görünüşünü ve bir arada duruşunu gösterir. Modelleme başlangıcı için kullanılabilir; ölçülü teknik çizim veya bütün mekanik bağlantıların doğrulanmış çözümü değildir. Uzman ve saha mühendisi mini oyunlarının konsept durumu devam eder.
+
+![DEEPCLEAN — bütün tekne ve güverte ekipmanları modelleme referansı](Art/DEEPCLEAN_Boat_Modeling_Reference_01.png)
+
+**Modelleme kapsamı:**
+
+- Mavi servis erişim arabası: hareketli gövde, üzerindeki kompakt muhafaza, sabit kılavuz raylar, tek tahrik vidası, servis bağlantı soketli sabit tahrik kutusu ve hareket sonları. İlk mini oyunda servis girişinin açılmasını destekler.
+- Malzeme ayırma ve filtre ünitesi: kompakt tezgâh, filtre hazneleri ve bağlantı parçaları. Teknenin endüstriyel geri kazanım/numune çalışma kimliğini destekler; görüntüde bulunması ayrı bir zorunlu mini oyun anlamına gelmez.
+- Yatay numune çıkarım yatağı: sabit taşıyıcı yatak, silindirik muhafaza ve ayrılabilir/hareketli numune taşıyıcısı. Final çıkarımının görsel ve mekânsal temelidir.
+- Yük destek düzeneği: taşıyıcı çerçeve, makara ve vinç tamburu. Karşı ağırlığın yerleşimi ve mekanik bağlantısı henüz ayrıntılı olarak çözülmüş değildir.
+- Numune/ekipman depolama parçaları ve güverte altı servis bölgesi. Alt sağdaki kesit, tekne gövdesinde kalıcı bir açıklık yapılması talimatı değildir; içerideki sisteme ait açıklayıcı konsepttir.
+
+**Modellemeciye uygulama notları:** Mevcut tekne yeniden modellenmez; eklemeler modüler hazırlanır. Hareketli araba, vida, numune taşıyıcısı, tambur ve ileride hareket edecek kilit parçaları tek bir birleşik mesh hâline getirilmez. İlk geçişte ana hacimler ve bağlantı yerleri hazırlanır; ince yüzey ayrıntıları bundan sonra gelir.
+
+**Kesinleştirilmesi gerekenler:** Görseldeki mavi arabanın boyutu, kapalı durumda servis açıklığını gerçekten örtecek biçimde kontrol edilmelidir. Açık durumdaki park yeri; oyuncunun geçişini, servis erişimini veya numunenin çıkarılacağı alanı kapatmamalıdır. Ana görünüş ile küçük detay görsellerindeki olası geometri farkları birebir kopyalanmaz. Yapay zekâ tarafından yazılmış İngilizce etiketler değil, bu metindeki işlev tanımları esas alınır. Ölçek, hareket mesafeleri, karşı ağırlık ve güverte altı bağlantılar uygulama öncesinde doğrulanacaktır.
+
+---
+
 ## 13. Arayüz ve oyuncu bilgisi
 
 ### 13.1 Temel HUD
@@ -870,6 +890,8 @@ Seviyeye özgü tek seferlik bir anlatı/prosedür sahnesi bu tekrar kullanılab
 ## 18. Değişiklik günlüğü
 
 ### 0.7 içinde — 5 Eylül 2026
+
+- Son bütün tekne görseli Bölüm 12.6'ya modelleme referansı olarak eklendi; ekipman kapsamı, ayrı modellenmesi gereken hareketli parçalar ve henüz kesinleşmemiş bağlantılar açıklandı. Paylaşım için tam içerikli Word kopyası hazırlanması kararlaştırıldı. Sürüm 0.7 korundu.
 
 - Üç mini oyunun aşama kapanışı, ana hedefe fiziksel ilerleme ve farklı deneyim oluşturması kaydedildi; Uzman/Saha Mühendisi çözümleri konsept bırakıldı.
 - İlk mini oyunun yeni yetenek edinmeden tamamlanamaması kesin gelişim ilkesi olarak eklendi. Mekanik tahrik bağlantısı bunun için yeni çalışma önerisi olarak ayrı etiketlendi.
